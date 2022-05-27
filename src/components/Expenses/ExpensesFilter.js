@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
@@ -9,8 +10,8 @@ const ExpensesFilter = (props) => {
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
-        <label>Filter by Year</label>
-        <select value={props.Selected} onChange={dropdownChangeHandler}>
+        <label>Filter by year</label>
+        <select value={props.selected} onChange={dropdownChangeHandler}>
           <option value="2022">2022</option>
           <option value="2021">2021</option>
           <option value="2020">2020</option>
